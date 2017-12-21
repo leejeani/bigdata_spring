@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 	<bean id="collectionBean" 
+ 	class="collection.CollectionBean">
+ 		<property name="addressList">
+ 			<list>
+ 				<value>Data1</value>
+ 				<value>Data2</value>
+ 				<value>Data3</value>
+ 				<value>Data4</value>
+ 				<value>Data5</value>
+ 			</list>
+ 		</property>
+ 	</bean>
+    
+</beans>
+
+
+
