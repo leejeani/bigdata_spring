@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+   <bean id="userBiz" class="biz.UserBiz">
+   		<constructor-arg ref="userMysqlDao"></constructor-arg>
+   		<property name="mysql" ref="userOracleDao"></property>
+   </bean>
+   <bean id="userOracleDao" class="dao.UserOracleDao"></bean>
+   <bean id="userMysqlDao" class="dao.UserMySQLDao"></bean>
+    
+    
+   <bean id="productBiz" class="biz.ProductBiz">
+   		<constructor-arg ref="productMysqlDao"></constructor-arg>
+   		<property name="mysql" ref="productOracleDao"></property>
+   </bean>
+   <bean id="productMysqlDao" class="dao.ProductOracleDao"></bean>
+   <bean id="productOracleDao" class="dao.ProductMySQLDao"></bean>
+    
+</beans>
+
+
+
